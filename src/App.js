@@ -1,24 +1,16 @@
+import React from "react";
 import logo from './logo.svg';
+import HelloMsg from './testing/helloMsg'
+import Timer from './testing/stateful'
+import ToDo from './testing/ToDo'
+import HookEx from "./testing/HookTest";
+
 import './App.css';
+import ChildPass from "./testing/childPass";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ChildPass/>
   );
 }
 
